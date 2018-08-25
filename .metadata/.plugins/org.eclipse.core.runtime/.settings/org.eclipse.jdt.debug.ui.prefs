@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.debug.ui.active_filters=ch.qos.logback.*,com.atomikos.*,com.ibm.*,com.sun.*,groovy.lang.*,groovy.ui.*,java.*,java.lang.reflect.*,javax.*,jrockit.*,org.apache.commons.logging.*,org.codehaus.groovy.*,org.junit.*,org.omg.*,org.springframework.*,sun.*,sun.misc.*,sun.reflect.*,sunw.*,java.lang.ClassLoader,org.hamcrest.CoreMatchers,org.hamcrest.Matchers,org.junit.Assert,org.junit.Assume,org.junit.matchers.JUnitMatchers
+org.eclipse.jdt.debug.ui.detail_formatters=groovy.lang.Reference,get(),1
+org.eclipse.jdt.debug.ui.inactive_filters=
+org.eclipse.jdt.debug.ui.javaDebug.alertHCRFailed=false
+org.eclipse.jdt.debug.ui.prompt_unable_to_install_breakpoint=false

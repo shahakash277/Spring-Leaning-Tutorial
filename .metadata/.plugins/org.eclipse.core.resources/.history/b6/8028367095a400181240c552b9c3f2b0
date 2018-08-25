@@ -1,0 +1,5 @@
+package com.example.demo.jpaconfig;
+
+public class JPAConfig {
+
+}
