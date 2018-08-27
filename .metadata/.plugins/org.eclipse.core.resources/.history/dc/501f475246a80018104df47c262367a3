@@ -1,0 +1,15 @@
+package com.example.demo.login.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.login.model.User;
+
+public interface UserService {
+
+    User create(User demo);
+
+    List<User> get(long id);
+
+}

@@ -1,0 +1,28 @@
+package com.example.demo.login.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.login.model.User;
+import com.example.demo.login.repository.UserRepository;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+    @Autowired
+    UserRepository userRepository;
+
+    @Override
+    public User create(User demo) {
+        return userRepository.save(demo);
+    }
+
+    @Override
+    public List<User> get(long id) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+}
