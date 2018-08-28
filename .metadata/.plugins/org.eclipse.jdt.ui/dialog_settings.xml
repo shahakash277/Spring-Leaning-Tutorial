@@ -3,6 +3,7 @@
 	<item value="/home/flotomate/Development/projects/Operious/server_projects/others/eclipse" key="org.eclipse.jdt.ui.codeformatter.loadpath"/>
 	<item value="filter_imports;" key="filters_last_used"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
 		<item value="*" key="patterns"/>
 		<item value="false" key="updateSimilarElements"/>

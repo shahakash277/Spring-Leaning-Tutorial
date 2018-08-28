@@ -1,8 +1,0 @@
-package com.example.demo.login.model;
-
-import javax.persistence.Entity;
-
-@Entity
-public class user {
-
-}

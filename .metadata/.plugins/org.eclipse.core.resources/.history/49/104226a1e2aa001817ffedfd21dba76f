@@ -1,0 +1,5 @@
+package com.springdemo.auth.config;
+
+public class AuthenticationEntryPoint {
+
+}
