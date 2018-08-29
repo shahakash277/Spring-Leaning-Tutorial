@@ -9,6 +9,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import com.springdemo.users.service.UserService;
+
 @Configuration
 @EnableWebSecurity
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -16,10 +18,18 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     AuthenticationEntryPoint authEntryPoint;
 
+    @Autowired
+    UserService userservice;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable().authorizeRequests().anyRequest().authenticated().and().httpBasic().authenticationEntryPoint(
                 authEntryPoint);
+    }
+
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userservice).passwordEncoder(encoder());
     }
 
     @Bean
