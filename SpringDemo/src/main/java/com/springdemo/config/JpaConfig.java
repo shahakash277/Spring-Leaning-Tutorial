@@ -67,7 +67,8 @@ public class JpaConfig {
     @Bean
     public Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
-        hibernateProperties.put("spring.jpa.properties.hibernate.dialect", dbDialect);
+        hibernateProperties.put("hibernate.jdbc.lob.non_contextual_creation", true);
+        hibernateProperties.put("hibernate.dialect", dbDialect);
         hibernateProperties.put("spring.jpa.show-sql", dbShowSQL);
         hibernateProperties.put("spring.jpa.hibernate.ddl-auto", dbDDL);
         return hibernateProperties;
