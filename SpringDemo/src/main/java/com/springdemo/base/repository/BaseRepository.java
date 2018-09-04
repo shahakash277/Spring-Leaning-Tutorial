@@ -8,5 +8,7 @@ import org.springframework.data.repository.NoRepositoryBean;
 
 @NoRepositoryBean
 public interface BaseRepository<T, ID extends Serializable> extends JpaRepository<T, ID> {
-    public List<T> findByNameDemo(String name);
+    public List<T> findByName(String name);
+
+    public T findById(int id);
 }
